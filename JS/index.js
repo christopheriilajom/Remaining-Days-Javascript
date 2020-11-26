@@ -25,10 +25,6 @@ function calculate(){
             alert("You are greater than " + assumedNumbers.AGE + " years old");
         }
         else{
-            if(age === assumedNumbers.AGE){
-                alert("You are 90 years old");
-            }
-            else{
                 // alert(`You have ${daysLeft} days, ${weekLeft} weeks, and ${monthLeft} months left.`);
                 console.log(`You have ${daysLeft} days, ${weekLeft} weeks, and ${monthLeft} months left.`);
                 resultDiv.style.visibility = 'visible';
@@ -39,7 +35,7 @@ function calculate(){
 
                 document.getElementById('submitBtn').onclick = function(){  // reset button
                     document.getElementById('startResult').innerHTML = startResult;
-                        }
+                        
             }
         }
     }
