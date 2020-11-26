@@ -1,0 +1,12 @@
+<!--Bootstrap classes that I use
+.bg-dark
+.container
+.jumbotron
+.text-center
+.display-4
+.round
+.btn-lg
+.list-unstyled
+.badge
+.badge-dark
+-->
