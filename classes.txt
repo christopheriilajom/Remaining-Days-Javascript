@@ -9,4 +9,9 @@
 .list-unstyled
 .badge
 .badge-dark
+.fas fa-bug
+.fas fa-sun
+.fas fa-calendar-week
+.far fa-moon
+.fas fa-user-circle
 -->
