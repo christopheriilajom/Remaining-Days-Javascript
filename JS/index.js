@@ -29,7 +29,7 @@ function calculate(){
                 console.log(`You have ${daysLeft} days, ${weekLeft} weeks, and ${monthLeft} months left.`);
                 resultDiv.style.visibility = 'visible';
 
-                document.getElementById('listTable').innerHTML = `<li>You have</li> <li><i class="fas fa-sun"></i> ${daysLeft} days</li> <li><i class="fas fa-calendar-week"></i> ${weekLeft} weeks</li> <li><i class="far fa-moon"></i> ${monthLeft} months until 90 years old</li>` 
+                document.getElementById('listTable').innerHTML = `<li>You have</li> <li><i class="fas fa-sun"></i> ${daysLeft} days</li> <li><i class="fas fa-calendar-week"></i> ${weekLeft} weeks</li> <li><i class="far fa-moon"></i> ${monthLeft} months</li> <li>until 90 years old</li>` 
                 
                 document.getElementById("submitBtn").innerHTML = 'Reset';                       
 
