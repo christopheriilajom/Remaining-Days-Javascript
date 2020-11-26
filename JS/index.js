@@ -17,12 +17,28 @@ function calculate(){
     var resultDiv = document.getElementById('resultDiv');
 
     if(isNaN(age)){
-        alert("Your input is not a number!");
+        resultDiv.style.visibility = 'visible';
+        document.getElementById('listTable').innerHTML = '<li><i class="fas fa-bug"></i> Your input is not a number</li>';
+        document.getElementById("submitBtn").innerHTML = 'Reset';  
+
+        document.getElementById('submitBtn').onclick = function(){  // reset button
+                 document.getElementById('startResult').innerHTML = startResult;                    
+            }
+
         console.log("Your input is not a number!");
     }
     else{
         if(age > assumedNumbers.AGE){
-            alert("You are greater than " + assumedNumbers.AGE + " years old");
+            resultDiv.style.visibility = 'visible';
+            document.getElementById('listTable').innerHTML = '<li><i class="fas fa-bug"></i> Your age is greater than 90</li>';
+            document.getElementById("submitBtn").innerHTML = 'Reset';  
+    
+            document.getElementById('submitBtn').onclick = function(){  // reset button
+                     document.getElementById('startResult').innerHTML = startResult;                    
+                }
+    
+            console.log("Your age is greater than 90!");
+            
         }
         else{
                 // alert(`You have ${daysLeft} days, ${weekLeft} weeks, and ${monthLeft} months left.`);
